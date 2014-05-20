@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <servlet-name>GetClassForIndex</servlet-name>
+    <servlet-class>servlets.GetClassForIndex</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetUserById</servlet-name>
+    <servlet-class>servlets.GetUserById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetClassForAdd</servlet-name>
+    <servlet-class>servlets.GetClassForAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Add</servlet-name>
+    <servlet-class>servlets.Add</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowOne</servlet-name>
+    <servlet-class>servlets.ShowOne</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Modify</servlet-name>
+    <servlet-class>servlets.Modify</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>servlets.Delete</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>GetClassForIndex</servlet-name>
+    <url-pattern>/GetClassForIndex</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUserById</servlet-name>
+    <url-pattern>/GetUserById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetClassForAdd</servlet-name>
+    <url-pattern>/GetClassForAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Add</servlet-name>
+    <url-pattern>/Add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowOne</servlet-name>
+    <url-pattern>/ShowOne</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Modify</servlet-name>
+    <url-pattern>/Modify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/Delete</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+  	<filter-name>Set Character Encoding</filter-name>
+  	<filter-class>filter.SetCharacterEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>gb2312</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>Set Character Encoding</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>
