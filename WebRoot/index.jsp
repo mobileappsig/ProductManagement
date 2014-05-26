@@ -2,7 +2,7 @@
 <%
 	ArrayList list = (ArrayList)session.getAttribute("getclass");
 	if(list ==null){
-	    response.sendRedirect("/addressbook/GetClassForIndex");
+	    response.sendRedirect("/ProductManagement/GetClassForIndex");
 	}
 	else {
  %>
