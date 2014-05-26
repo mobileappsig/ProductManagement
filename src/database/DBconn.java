@@ -27,7 +27,7 @@ public class DBconn {
 		try {
 			Class.forName("org.gjt.mm.mysql.Driver");
 			conn = DriverManager
-					.getConnection("jdbc:mysql://localhost:3306/contacts?user=root&password=admin&useUnicode=true&characterEncoding=gb2312");
+					.getConnection("jdbc:mysql://localhost:3306/contacts?user=pm&password=pm&useUnicode=true&characterEncoding=gb2312");
 			
 		} catch (Exception e) {
 
